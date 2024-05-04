@@ -1,0 +1,55 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-align: center;
+        border-bottom: 5px solid rgb(182, 220, 58);
+        
+    }
+    .categories-list{
+        border: 1px solid rgb(186, 90, 186);
+        display: flex;
+        border-radius: 10px;
+        
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+        input{
+            display: none;
+        }
+        input:checked + label{
+            border-bottom:1px solid blue;
+            color: rgb(255, 115, 0);
+        }
+        label{
+            padding:10px ;
+        }
+        }
+        .dishes-list{
+            border: 1px solid rgb(255, 115, 0);
+            display: grid;
+            border-radius: 5px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 10px;
+            .dish-card{
+                border: 1px solid rgb(9, 178, 161);
+                height: 200px;
+                display: flex;
+                gap: 10px;
+                padding: 1rem;
+                box-shadow: 1px 4px 8px rgb(143, 59, 198);
+                img{
+                    height: 200px;
+                    width: 80%;
+                    object-fit: cover;
+                }
+                .price{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
+            }
+        }
+}

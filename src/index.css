@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  h1{
+    text-align: center;
+    font-size: 3rem;
+    color: steelblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+}
+.genre-filter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+  h2{
+    text-align: center;
+    font-size: 2rem;
+    color: darkred;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: 2%;
+    button{
+      border-radius: 5px;
+      box-shadow: 1px 1px;
+      padding: 2px;
+      color: cornflowerblue;
+      font-size: 0.5rem;
+      height: 2rem;
+      width: 2.5rem;
+      white-space:normal !important;
+word-wrap:break-word;
+     
+    }
+   
+  }
+}
+.movie-list{
+  table {
+    margin: 10px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* CSS for table header */
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* CSS for table rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* CSS for table data */
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* CSS for table hover effect */
+  tr:hover {
+    background-color: #ddd;
+  }
+}
